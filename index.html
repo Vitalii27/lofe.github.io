@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="assets/vendors/magnific-popup/magnific-popup.css">
     <link rel="stylesheet" href="assets/vendors/slick/slick.css">
     <link rel="stylesheet" href="assets/vendors/slick/slick-theme.css">
+    <link rel="stylesheet" href="assets/vendors/animate/animate.min.css">
+
     <!-- main styles -->
     <link rel="stylesheet" href="assets/css/style.css">
 
@@ -26,18 +28,18 @@
 
 <body>
 
-    <!-- HEADER -->
+    <div class="preloader" id="page-preloader"></div> <!-- HEADER -->
 <header class="header">
     <div class="container-fluid">
         <div class="row">
             <div class="header_logo  col-md-2 ">
-                <a href="#" class="header_link"> <img src=" assets/images/content/logo.png " alt="logo " class="header_img "> </a>
+                <a href="#" class="header_link"> <img src=" assets/images/content/logo.svg" alt="logo " class="header_img "> </a>
             </div>
             <nav id="side-menu" class="swipe-menu col-md-9">
     <ul class="swipe-menu__list">
-        <li><a href="#section-map">About Lofe</a></li>
+        <li><a href="#section-about">About Lofe</a></li>
         <li><a href="#section-inspiration">Lofe concepts</a></li>
-        <li><a href="#section-stems">Love stems</a></li>
+        <li><a href="#section-stems">Lofe stems</a></li>
         <li><a href="#section-assortment">Assortment</a></li>
         <li><a href="#section-care">Care</a></li>
         <li><a href="#section-contacts">Contact</a></li>
@@ -45,6 +47,13 @@
     <div class="swipe-menu_language col-xs-1">
         <div class="swipe-menu_current-language ">en</div>
         <i class="fa fa-angle-down swipe-menu_arrow " aria-hidden="true "></i>
+        <div class="swipe-menu_dropdown">
+            <ul class="swipe-menu_list-dropdown">
+                <li class="swipe-menu_item-dropdown">ru</li>
+                <li class="swipe-menu_item-dropdown">ch</li>
+
+            </ul>
+        </div>
     </div>
 </nav>
 <!-- swipe-menu --> <button class="menu-btn js-toggle-menu" aria-labelledby="side-menu">
@@ -60,117 +69,126 @@
 <!-- HEADER end-->
 
     <main class="main-content">
-        <!-- <div class="welcome_slide"> -->
-        <section class="section welcome" id="section-welcome" style="background-image: url('assets/images/content/welcome-section_bg.jpg')">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="welcome_content">
-    <div class="title" data-animation="fadeIn, fadeOut">Straight from the land in <span class="title--blue">costa rica</span>, now into your own
-        <span class="title--blue">living room</span>!</div>
-    <div class="welcome_buttons">
-        <a class="buttons_link" href="#">Lofe Concepts</a>
-        <a class="buttons_link buttons_link--color" href="#">Lofe Stems</a>
-    </div>
-</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- <section class="section welcome" style="background-image: url('assets/images/content/welcome-section_bg.jpg')">
+        <div class="welcome_slide">
+            <section class="section welcome" id="section-welcome" style="background-image: url('assets/images/content/welcome-section_bg.jpg')">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-xs-12">
                             <div class="welcome_content">
-    <div class="title" data-animation="fadeIn, fadeOut">Straight from the land in <span class="title--blue">costa rica</span>, now into your own
+    <div class="title js-animation-in">Straight from the land in <span class="title--blue">costa rica</span>, now into your own
         <span class="title--blue">living room</span>!</div>
     <div class="welcome_buttons">
-        <a class="buttons_link" href="#">Lofe Concepts</a>
-        <a class="buttons_link buttons_link--color" href="#">Lofe Stems</a>
+        <a class="buttons_link js-animation-left" href="#">Lofe Concepts</a>
+        <a class="buttons_link buttons_link--color js-animation-right" href="#">Lofe Stems</a>
     </div>
 </div>
                         </div>
                     </div>
                 </div>
-            </section> -->
-        <!-- </div> -->
-        <section class="section map" id="section-map" style="background-image: url('assets/images/content/section-map_bg.png')">
+            </section>
+            <section class="section welcome" style="background-image: url('assets/images/content/welcome-section_bg.jpg')">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="welcome_content">
+    <div class="title js-animation-in">Straight from the land in <span class="title--blue">costa rica</span>, now into your own
+        <span class="title--blue">living room</span>!</div>
+    <div class="welcome_buttons">
+        <a class="buttons_link js-animation-left" href="#">Lofe Concepts</a>
+        <a class="buttons_link buttons_link--color js-animation-right" href="#">Lofe Stems</a>
+    </div>
+</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="section about" id="section-about" style="background-image: url('assets/images/content/section-map_bg.png')">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-7 col-md-offset-5 col-sm-12">
-                        <div class="map_content">
-    <div class="title">Costa Rica Lofe<span class="title--blue"> Story</span></div>
-    <div class="subtitle">Drasingel it is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div>
-    <div class="description">
-        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum,
-        you need to be sure there isn't anything embarrassing hidden in the middle of text.
+                        <div class="about_content ">
+    <div class="about_wrap js-animation-right">
+        <div class="title ">Costa Rica Lofe<span class="title--blue"> Story</span></div>
+        <div class="subtitle">Drasingel it is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div>
+        <div class="description">
+            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum,
+            you need to be sure there isn't anything embarrassing hidden in the middle of text.
+        </div>
+        <div class="about_buttons">
+            <a class="buttons_link" href="#">Lofe Assortment</a>
+        </div>
     </div>
-    <div class="map_buttons">
-        <a class="buttons_link" href="#">Lofe Assortment</a>
-    </div>
-    <div class="map_growth" style="background-image: url('assets/images/content/flowers.svg')"></div>
-    <div class="assortment_text">
-        Grow up your Drasingel<br>from stem to plant
-    </div>
-    <div class="assortment_arrow-left">
-        <img src="assets/images/content/arrow-l.png" alt="" class="assortment_arrow-img">
-    </div>
-    <div class="assortment_arrow-right">
-        <img src="assets/images/content/arrow-r.png" alt="" class="assortment_arrow-img">
-    </div>
+    <div class="about_growth js-animation-in" style="background-image: url('assets/images/content/flowers.svg')"></div>
+<div class="assortment_text js-animation-in">
+    Grow up your Drasingel<br>from stem to plant
+</div>
+<div class="assortment_arrow-left js-animation-in">
+    <img src="assets/images/content/arrow-l.png" alt="arrow" class="assortment_arrow-img">
+</div>
+<div class="assortment_arrow-right js-animation-in">
+    <img src="assets/images/content/arrow-r.png" alt="arrow" class="assortment_arrow-img">
+</div>
 </div>
                     </div>
                 </div>
             </div>
-            <div class="map_bottom"></div>
+            <div class="about_bottom"></div>
         </section>
         <section class="section assortment" id="section-assortment" style="background-image: url('assets/images/content/section-assortment_bg.svg')">
             <div class="big-container">
 
-    <h2 class="title">
+    <h2 class="title js-animation-up">
         Lofe <span class="title--blue">Assortment</span>
     </h2>
-    <div class="subtitle">Long life by Anaian</div>
-    <div class="popup assortment_carousel">
+    <div class="subtitle js-animation-up">Long life by Anaian</div>
+    <div class="popup assortment_carousel js-animation-up">
         <div class="popup_item">
             <a href="assets/images/content/big-img.png" class="popup_link js-popup">
                 <div class="popup_img" style="background-image: url('assets/images/content/assortment-slider_img3.png')"></div>
+                <div class="popup_plus"></div>
             </a>
             <div class="subtitle">Dracaena Marginata ‘Bicolor’</div>
         </div>
         <div class="popup_item">
             <a href="assets/images/content/assortment-slider_img1.png" class="popup_link js-popup">
                 <div class="popup_img" style="background-image: url('assets/images/content/assortment-slider_img1.png')"></div>
+                <div class="popup_plus"></div>
             </a>
             <div class="subtitle">Dracaena Marginata</div>
         </div>
         <div class="popup_item">
             <a href="assets/images/content/assortment-slider_img2.png" class="popup_link js-popup">
                 <div class="popup_img" style="background-image: url('assets/images/content/assortment-slider_img2.png')"></div>
+                <div class="popup_plus"></div>
             </a>
             <div class="subtitle">Dracaena Marginata</div>
         </div>
         <div class="popup_item">
             <a href="assets/images/content/assortment-slider_img4.png" class="popup_link js-popup">
                 <div class="popup_img" style="background-image: url('assets/images/content/assortment-slider_img4.png')"></div>
+                <div class="popup_plus"></div>
             </a>
             <div class="subtitle">Dracaena Marginata ‘Magenta’</div>
         </div>
         <div class="popup_item">
             <a href="assets/images/content/assortment-slider_img5.png" class="popup_link js-popup">
                 <div class="popup_img" style="background-image: url('assets/images/content/assortment-slider_img5.png')"></div>
+                <div class="popup_plus"></div>
             </a>
             <div class="subtitle">Dracaena Margina ‘Bicolor’</div>
         </div>
         <div class="popup_item">
             <a href="assets/images/content/assortment-slider_img3.png" class="popup_link js-popup">
                 <div class="popup_img" style="background-image: url('assets/images/content/assortment-slider_img3.png')"></div>
+                <div class="popup_plus"></div>
             </a>
             <div class="subtitle">Dracaena Marginata ‘Bicolor’</div>
         </div>
         <div class="popup_item">
             <a href="assets/images/content/assortment-slider_img1.png" class="popup_link js-popup">
                 <div class="popup_img" style="background-image: url('assets/images/content/assortment-slider_img1.png')"></div>
+                <div class="popup_plus"></div>
             </a>
             <div class="subtitle">Dracaena Marginata</div>
         </div>
@@ -182,60 +200,67 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-xs-12">
-                        <h2 class="title">
+                        <h2 class="title js-animation-up">
     Lofe <span class="title--blue">Stems</span>
 </h2>
-<div class="subtitle">Long life by Anaian</div>
-<div class="popup stems_carousel ">
+<div class="subtitle js-animation-up">Long life by Anaian</div>
+<div class="popup stems_carousel js-animation-up">
     <div class="popup_item stems_item">
         <a href="assets/images/content/big-img.png" class="popup_link stems_link js-popup">
             <div class="popup_img stems_img" style="background-image: url('assets/images/content/big-img.png')"></div>
+            <div class="popup_plus popup_plus--brown"></div>
         </a>
         <div class="subtitle stems_subtitle">Dracaena Marginata ‘Bicolor’</div>
     </div>
     <div class="popup_item stems_item">
         <a href="assets/images/content/stems-slider_img2.png" class="popup_link stems_link js-popup">
             <div class="popup_img stems_img" style="background-image: url('assets/images/content/stems-slider_img2.png')"></div>
+            <div class="popup_plus popup_plus--brown"></div>
         </a>
         <div class="subtitle stems_subtitle">Dracaena Marginata ‘Bicolor’</div>
     </div>
     <div class="popup_item stems_item">
         <a href="assets/images/content/stems-slider_img3.png" class="popup_link stems_link js-popup">
             <div class="popup_img stems_img" style="background-image: url('assets/images/content/stems-slider_img3.png')"></div>
+            <div class="popup_plus popup_plus--brown"></div>
         </a>
         <div class="subtitle stems_subtitle">Dracaena Marginata ‘Bicolor’</div>
     </div>
     <div class="popup_item stems_item">
         <a href="assets/images/content/stems-slider_img1.png" class="popup_link stems_link js-popup">
             <div class="popup_img stems_img" style="background-image: url('assets/images/content/stems-slider_img1.png')"></div>
+            <div class="popup_plus popup_plus--brown"></div>
         </a>
         <div class="subtitle stems_subtitle">Dracaena Marginata ‘Bicolor’</div>
     </div>
     <div class="popup_item stems_item">
         <a href="assets/images/content/stems-slider_img1.png" class="popup_link stems_link js-popup">
             <div class="popup_img stems_img" style="background-image: url('assets/images/content/stems-slider_img1.png')"></div>
+            <div class="popup_plus popup_plus--brown"></div>
         </a>
         <div class="subtitle stems_subtitle">Dracaena Marginata ‘Bicolor’</div>
     </div>
     <div class="popup_item stems_item">
         <a href="assets/images/content/stems-slider_img1.png" class="popup_link stems_link js-popup">
             <div class="popup_img stems_img" style="background-image: url('assets/images/content/stems-slider_img1.png')"></div>
+            <div class="popup_plus popup_plus--brown"></div>
         </a>
         <div class="subtitle stems_subtitle">Dracaena Marginata ‘Bicolor’</div>
     </div>
     <div class="popup_item stems_item">
         <a href="assets/images/content/stems-slider_img1.png" class="popup_link stems_link js-popup">
             <div class="popup_img stems_img" style="background-image: url('assets/images/content/stems-slider_img1.png')"></div>
+            <div class="popup_plus popup_plus--brown"></div>
         </a>
         <div class="subtitle stems_subtitle">Dracaena Marginata ‘Bicolor’</div>
     </div>
     <div class="popup_item stems_item">
         <a href="assets/images/content/stems-slider_img1.png" class="popup_link stems_link js-popup">
             <div class="popup_img stems_img" style="background-image: url('assets/images/content/stems-slider_img1.png')"></div>
+            <div class="popup_plus popup_plus--brown"></div>
         </a>
         <div class="subtitle stems_subtitle">Dracaena Marginata ‘Bicolor’</div>
     </div>
-
 </div>
                     </div>
                 </div>
@@ -244,28 +269,28 @@
         </section>
         <section class="section inspiration" id="section-inspiration" style="background-image: url('assets/images/content/section-assortment_bg.svg')">
             <div class="big-container">
-    <h2 class="title">
+    <h2 class="title js-animation-up">
         Lofe <span class="title--blue">Inspiration</span>
     </h2>
-    <div class="subtitle">Long life by Anaian</div>
-    <div class="inspiration_carousel">
+    <div class="subtitle js-animation-up">Long life by Anaian</div>
+    <div class="inspiration_carousel js-animation-up">
         <div class="inspiration_slide">
-            <img class="inspiration_img" src="assets/images/content/inspiration-img1.jpg" alt="">
+            <img class="inspiration_img" src="assets/images/content/inspiration-img1.jpg" alt="inspiration_img">
         </div>
         <div class="inspiration_slide ">
-            <img class="inspiration_img" src="assets/images/content/inspiration-img2.jpg" alt="">
+            <img class="inspiration_img" src="assets/images/content/inspiration-img2.jpg" alt="inspiration_img">
         </div>
         <div class="inspiration_slide ">
-            <img class="inspiration_img" src="assets/images/content/inspiration-img2.jpg" alt="">
+            <img class="inspiration_img" src="assets/images/content/inspiration-img2.jpg" alt="inspiration_img">
         </div>
         <div class="inspiration_slide">
-            <img class="inspiration_img" src="assets/images/content/inspiration-img1.jpg" alt="">
+            <img class="inspiration_img" src="assets/images/content/inspiration-img1.jpg" alt="inspiration_img">
         </div>
         <div class="inspiration_slide ">
-            <img class="inspiration_img" src="assets/images/content/inspiration-img2.jpg" alt="">
+            <img class="inspiration_img" src="assets/images/content/inspiration-img2.jpg" alt="inspiration_img">
         </div>
         <div class="inspiration_slide">
-            <img class="inspiration_img" src="assets/images/content/inspiration-img1.jpg" alt="">
+            <img class="inspiration_img" src="assets/images/content/inspiration-img1.jpg" alt="inspiration_img">
         </div>
     </div>
 </div>
@@ -274,29 +299,29 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-xs-12">
-                        <h2 class="title">
+                        <h2 class="title js-animation-up">
     Lofe <span class="title--blue">Care</span>
 </h2>
-<div class="subtitle">Long life by Anaian</div>
+<div class="subtitle js-animation-up">Long life by Anaian</div>
 <div class="care_content">
     <div class="care_requirements col-md-6">
-        <div class="care_light">
+        <div class="care_light js-animation-left">
             <div class="care_requirements-icon care_requirements-icon--light-yellow"><i class="demo-icon icon-light"></i> </div>
             <div class="care_requirements-title">Light</div>
             <div class="care_requirements-desc">Brightly filtered light</div>
         </div>
-        <div class="care_temperature">
+        <div class="care_temperature js-animation-left">
             <div class="care_requirements-icon"><i class="demo-icon icon-temperature"></i></div>
             <div class="care_requirements-title">Temperature</div>
             <div class="care_requirements-desc">12°C - 22°C</div>
         </div>
-        <div class="care_watering">
+        <div class="care_watering js-animation-left">
             <div class="care_requirements-icon care_requirements-icon--blue"><i class="demo-icon icon-watering"></i></div>
             <div class="care_requirements-title">Watering</div>
             <div class="care_requirements-desc">Once a week</div>
         </div>
     </div>
-    <div class="care_descripion col-md-5 col-md-offset-1">
+    <div class="care_descripion col-md-5 col-md-offset-1 js-animation-right">
         <h4 class="care_descripion-title">
             Care:
         </h4>
@@ -310,21 +335,55 @@
                 </div>
             </div>
         </section>
-        <section class="section lofe-instagram" id="section-instagram" style="background-image: url('assets/images/content/section-assortment_bg.svg')">
+        <section class="section instagram" id="section-instagram" style="background-image: url('assets/images/content/section-assortment_bg.svg')">
             <div class="big-container">
-    <div class="instagram">
-        <div class="instagram_bg">
-            <span class="title">Lofe</span><br>Inspiration
+    <div class="instagram_title js-animation-in">
+        <span class="title">Lofe</span><br>Inspiration
+    </div>
+    <div class="instagram_list">
+        <div class="instagram_item instagram_item--left js-animation-in">
+            <a href="#" target="_blank" class="instagram_link-side">
+                <div class="instagram_item instagram_item-up" style="background-image: url('assets/images/content/instagram-pic1.jpg')"></div>
+            </a>
+            <a href="#" target="_blank" class="instagram_link-side">
+                <div class="instagram_item instagram_item-bottom" style="background-image: url('assets/images/content/instagram-pic2.jpg')"></div>
+            </a>
         </div>
-        <div class="instagram_block instagram_block--left">
-            <div class="instagram_block-up " style="background-image: url('assets/images/content/instagram-pic1.jpg')"></div>
-            <div class="instagram_block-bottom " style="background-image: url('assets/images/content/instagram-pic2.jpg')"></div>
+        <div class="instagram_item instagram_item--center js-animation-in">
+            <a href="#" target="_blank" class="instagram_link">
+                <div class="instagram_item instagram_item--center-up" style="background-image: url('assets/images/content/instagram-pic3.jpg')"></div>
+            </a>
+            <a href="#" target="_blank" class="instagram_link">
+                <div class="instagram_item instagram_item--center-bottom" style="background-image: url('assets/images/content/instagram-pic4.jpg')"></div>
+            </a>
         </div>
-        <div class="instagram_block " style="background-image: url('assets/images/content/instagram-pic3.jpg')"></div>
-        <div class="instagram_block " style="background-image: url('assets/images/content/instagram-pic4.jpg')"></div>
-        <div class="instagram_block instagram_block--right">
-            <div class="instagram_block-up " style="background-image: url('assets/images/content/instagram-pic5.jpg')"></div>
-            <div class="instagram_block-bottom " style="background-image: url('assets/images/content/instagram-pic6.jpg')"></div>
+        <div class="instagram_item instagram_item--right js-animation-in">
+            <a href="#" target="_blank" class="instagram_link-side">
+                <div class="instagram_item instagram_item-up" style="background-image: url('assets/images/content/instagram-pic5.jpg')"></div>
+            </a>
+            <a href="#" target="_blank" class="instagram_link-side">
+                <div class="instagram_item instagram_item-bottom" style="background-image: url('assets/images/content/instagram-pic6.jpg')"></div>
+            </a>
+        </div>
+    </div>
+    <div class="instagram_mobile-list">
+        <div class="instagram_mobile-item">
+            <img src="assets/images/content/instagram-pic1.jpg" alt="instagram-img" class="instagram_mobile-img">
+        </div>
+        <div class="instagram_mobile-item">
+            <img src="assets/images/content/instagram-pic2.jpg" alt="instagram-img" class="instagram_mobile-img">
+        </div>
+        <div class="instagram_mobile-item">
+            <img src="assets/images/content/instagram-pic3.jpg" alt="instagram-img" class="instagram_mobile-img">
+        </div>
+        <div class="instagram_mobile-item">
+            <img src="assets/images/content/instagram-pic4.jpg" alt="instagram-img" class="instagram_mobile-img">
+        </div>
+        <div class="instagram_mobile-item">
+            <img src="assets/images/content/instagram-pic5.jpg" alt="instagram-img" class="instagram_mobile-img">
+        </div>
+        <div class="instagram_mobile-item">
+            <img src="assets/images/content/instagram-pic6.jpg" alt="instagram-img" class="instagram_mobile-img">
         </div>
     </div>
 </div>
@@ -337,15 +396,15 @@
     <div class="container-fluid">
         <div class="row">
             <div class="icons col-xs-12">
-                <div class="icons_block">
+                <div class="icons_block js-animation-in">
                     <div class="icons_pic"><i class="demo-icon icon-ic-pin"></i></div>
                     <div class="icons_text">Anaiah Group Palmares, Costa Rica</div>
                 </div>
-                <div class="icons_block">
+                <div class="icons_block js-animation-in">
                     <div class="icons_pic"><i class="demo-icon icon-ic-mail"></i></div>
                     <div class="icons_text icons_text--email"><a href="mailto:info@anaiahgroup.com" class="icons_link">info@anaiahgroup.com</a></div>
                 </div>
-                <div class="icons_block">
+                <div class="icons_block js-animation-in">
                     <div class="icons_pic"><i class="demo-icon icon-ic-phone"></i></div>
                     <div class="icons_text icons_text--phone">+506 8310 5365</div>
                 </div>
@@ -357,29 +416,30 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-xs-12">
-                        <h2 class="title">
+                        <h2 class="title js-animation-up">
     Contact<span class="title--blue">Us</span>
 </h2>
-<div class="subtitle">Long life by Anaian</div>
+<div class="subtitle js-animation-up">Long life by Anaian</div>
 <div class="contacts_form">
     <form class="form">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-6 form-input_block">
+                <div class="col-md-6 form-input_block js-animation-in">
                     <input class="form_input" type="text" name="name" placeholder="Name">
                 </div>
-                <div class="col-md-6 form-input_block">
+                <div class="col-md-6 form-input_block js-animation-in">
                     <input class="form_input" type="email" name="email" placeholder="Email">
                 </div>
-                <div class="col-xs-12 form-input_block form-textarea__block">
+                <div class="col-xs-12 form-input_block form-textarea__block js-animation-in">
                     <textarea class="form_textarea" name="comment" placeholder="Your message"></textarea>
                 </div>
-                <div class="form_button col-xs-12">
+                <div class="form_button col-xs-12 js-animation-in">
                     <button class="buttons_link buttons_link--form">Send Message</button>
                 </div>
             </div>
         </div>
     </form>
+
 </div>
                     </div>
                 </div>
@@ -387,21 +447,18 @@
         </section>
     </main>
     <footer class="footer">
-    <div class="footer_head">
-
-    </div>
+    <div class="footer_head"></div>
     <div class="container-fluid">
         <div class="row">
             <div class="footer_content col-xs-12">
-                <div class="footer_copy col-xs-12 col-sm-6">Copyright &copy; 2017 Anaiah Group</div>
-                <div class="footer_button-up js-button-up">
+                <div class="footer_copy col-xs-12 col-sm-6 js-animation-in">Copyright &copy; 2017 Anaiah Group</div>
+                <div class="footer_button-up js-button-up js-animation-in">
                     <i class="demo-icon icon-arrow icon-arrow--up"></i>
                 </div>
-                <div class="footer_developed col-xs-12 col-sm-6">Design &amp; realisatie Floral Innovations</div>
+                <div class="footer_developed col-xs-12 col-sm-6 js-animation-in">Design &amp; realisatie Floral Innovations</div>
             </div>
         </div>
     </div>
-
 </footer> <!-- SCRIPTS -->
 <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script>
@@ -411,15 +468,10 @@
 <script src=assets/vendors/device.js></script>
 <script src=assets/vendors/magnific-popup/jquery.magnific-popup.min.js></script>
 <script src=assets/vendors/slick/slick.js></script>
-<script src=assets/vendors/masonry-docs/masonry.pkgd.min.js></script>
-<script src=assets/vendors/imageloaded/imageloaded.js></script>
-<!-- <script src='../assets/vendors/masonry-docs/masonry.pkgd.min.js'></script> -->
 <script src=assets/vendors/waypoints/waypoints.min.js></script>
-<!--<script src=assets/vendors/PickMeUp-master/dist/pickmeup.min.js></script>-->
-<!--<script src=assets/vendors/Inputmask-3.x/dist/jquery.inputmask.bundle.js></script>-->
-<!--<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuZMjqL0Vvlelcahq5ZiJZ8mAav816Kpg"></script>-->
-
+<script src=assets/vendors/headhesive/headhesive.min.js></script>
 <script src=assets/js/main.js></script>
+<!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuZMjqL0Vvlelcahq5ZiJZ8mAav816Kpg"></script> -->
 <!-- SCRIPTS end-->
 
 </body>
